@@ -1,0 +1,384 @@
+/* External Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+    .navbar-container {
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .shrinked {
+        background: white;
+        height: 70px;
+        box-shadow: 0px 5px 10px -5px rgba(0,0,0,1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-logo {
+        width: 9rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    .navbar-image-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-collapse {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-li {
+        list-style-type: none;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .navbar-a {
+        text-decoration: none;
+        color: black;
+        font-family: "Roboto", monospace;
+        font-size: 18px;
+        padding-bottom: 3px;
+        transition: all 0.2s ease-in-out;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar-container {
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .shrinked {
+        background: white;
+        height: 70px;
+        box-shadow: 0px 5px 10px -5px rgba(0,0,0,1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 3%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon {
+        width: 45px;
+        height: 5px;
+        background: black;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        position: absolute;
+        content: "";
+        width: 45px;
+        height: 5px;
+        background: black;
+        pointer-events: none;
+    }
+
+    .navbar-toggler-icon::before {
+        transform: translateY(-15px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon::after {
+        transform: translateY(15px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon {
+        background: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::before {
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::after {
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-logo {
+        width: 9rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    .navbar-image-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background: black;
+        transform: translateX(300px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidemenu {
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .pushed {
+        transform: translateX(-300px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    main {
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-li {
+        width: 100%;
+        height: 70px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px white;
+    }
+
+    .navbar-a {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto", monospace;
+        font-size: 18px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .navbar-container {
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .shrinked {
+        background: white;
+        height: 60px;
+        box-shadow: 0px 5px 10px -5px rgba(0,0,0,1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 4%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon {
+        width: 35px;
+        height: 4px;
+        background: black;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 4px;
+        background: black;
+        pointer-events: none;
+    }
+
+    .navbar-toggler-icon::before {
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler-icon::after {
+        transform: translateY(10px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon {
+        background: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::before {
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::after {
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-logo {
+        width: 7rem;
+        height: 2.3rem;
+        margin-left: 1rem;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-image-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transform: translateX(200px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidemenu {
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .pushed {
+        transform: translateX(-200px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobilepushed {
+        transform: translateX(-200px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    main {
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-li {
+        width: 100%;
+        height: 70px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px white;
+    }
+
+    .navbar-a {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto", monospace;
+        font-size: 18px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+}
+
+/* Content */
+main {
+    position: relative;
+    top: 0;
+}
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.theimage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
